@@ -1,0 +1,17 @@
+<div>
+<h4>Welcome to Server Manager 4.0</h4>
+<p>Manage your Servers and Users.</p>
+<!-- <button class="btn btn-danger" (click)="onLoadServers()"> Load Server</button> -->
+<button class="btn btn-outline-info" (click)="onLoadServers(1)"> Load Server1</button> &nbsp;&nbsp;
+<button
+        *ngIf="loggedin === false"
+        class="btn btn-outline-success"
+        (click)="onLogin()"> Log IN</button>
+<button
+        *ngIf="loggedin === true"
+        class="btn btn-outline-danger" (click)="onLogout()"> Log OUT</button>
+
+</div>
+<div></div>
+<div></div>
+

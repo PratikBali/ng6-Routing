@@ -1,0 +1,40 @@
+.container {
+  margin-top: 30px;
+  background-color: lightblue;
+}
+
+.mustache {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: absolute;
+  color: black;
+  /* background-color: currentColor; */
+  box-shadow:
+    150px 240px 0 0 currentColor,
+    300px 240px 0 0 currentColor;
+}
+.mustache::before {
+  content: '';
+  position: absolute;
+  top: 155px;
+  left: 79px;
+  width: 126px;
+  height: 254px;
+  border-bottom: solid 156px currentColor;
+  border-radius: 0 0 0 100%;
+  transform: rotate(-40deg);
+  transform-origin: right 150px;
+}
+.mustache::after {
+  content: '';
+  position: absolute;
+  top: 203px;
+  left: 406px;
+  width: 126px;
+  height: 254px;
+  border-bottom: solid 156px currentColor;
+  border-radius: 0 0 100% 0;
+  transform: rotate(40deg);
+  transform-origin: leftxs 150px;
+}
